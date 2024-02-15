@@ -1,0 +1,261 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: #1f2235;
+  padding: 30px 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .navitem {
+  list-style-type: none;
+  margin-right: 24px;
+}
+
+.navitem a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.brandlogo {
+  width: 120px;
+}
+
+.navitem a:hover {
+  color: #ff4a57;
+  cursor: pointer;
+}
+
+#Home {
+  background-color: #24263b;
+  padding: 80px;
+}
+
+#icons {
+  justify-content: flex-start;
+}
+
+#icons .babies {
+  border: 2px solid #ff4a57;
+  padding: 10px;
+  margin-right: 18px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+#icons .babies:hover {
+  background-color: #ff4a57;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.babies i {
+  font-size: 25px;
+  color: white;
+}
+
+#Home .words h1 {
+  font-size: 60px;
+  font-weight: 700px;
+  color: white;
+  margin: 50px 0;
+}
+
+#Home .words p {
+  font-size: 28px;
+  line-height: 1.5;
+  color: white;
+  margin-bottom: 44px;
+}
+
+#Home .buttons .portfoliobtn {
+  background-color: #24263b;
+  border-radius: 30px;
+  width: 180px;
+  height: 58px;
+  font-weight: 800px;
+  border: 2px solid #ff4a57;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  margin-right: 20px;
+  transition: background-color 0.8s ease;
+  cursor: pointer;
+}
+
+#Home .buttons .portfoliobtn:hover {
+  background-color: #ff4a57;
+}
+
+#Home .buttons .playbtn {
+  background-color: #ff4a57;
+  font-size: 18px;
+  border-radius: 30px;
+  height: 58px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+#Services {
+  background-color: #1f2235;
+  margin: 0;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#Services .title .red {
+  color: #ff4a57;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#Services .title h2 {
+  font-size: 68px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+#Services .title p {
+  color: #e8e9f2;
+  margin-bottom: 70px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cardees {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #24263b;
+  padding: 60px 40px;
+  color: White;
+  border-radius: 25px;
+  width: 350px;
+  height: 350px;
+  transition: background-color 0.8s;
+}
+
+.card:hover {
+  background-color: #ff4a57;
+}
+.card:hover i {
+  color: white;
+  transform: rotateY(360deg);
+}
+
+.card i {
+  color: #ff4a57;
+  font-size: 50px;
+  margin-bottom: 25px;
+  transition: transform 1.6s;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.card p {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 250px;
+  color: #e8e9f2;
+}
+
+@media (max-width: 780px) {
+  header {
+    padding: 0;
+    justify-content: center;
+  }
+  header .menu {
+    display: none;
+  }
+  header .hello {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+  }
+  #Home {
+    flex-direction: column;
+  }
+  #Home .words h1 {
+    font-size: 50px;
+    font-weight: 700px;
+    color: white;
+    margin: 50px 0;
+    text-align: center;
+  }
+  #Home .words p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 44px;
+    text-align: center;
+  }
+  #Home .right {
+    width: 300px;
+  }
+  #Home .right {
+    display: none;
+  }
+  #Services {
+    background-color: #1f2235;
+  }
+  #Services .title h2 {
+    font-size: 38px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+  }
+  .cardees {
+    flex-direction: column;
+  }
+  .cardees .card {
+    margin-top: 40px;
+  }
+  #icons {
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,7 @@
 html{scroll-behavior: smooth;}
+$bgcolor1 : #24263b;
+$bgcolor2 :#1f2235;
+$pinkcolor : #ff4a57;
 *{
     margin:0;
     padding:0;
@@ -10,9 +13,11 @@ body{
     height:100vh;
 }
 header{
-    background-color: #1f2235;
+    background-color: $bgcolor2;
     padding:30px 80px;
-  
+  position: fixed;
+ width:100%;
+ z-index: 1;
 }
 .horizontal{
     display:flex;
@@ -108,7 +113,8 @@ nav .navitem{
  }
  #Services{
     background-color: #1f2235;
-    padding: 80px;
+    margin:0;
+    padding:20px;
     
  }
 
@@ -137,15 +143,16 @@ nav .navitem{
     font-style: normal;
  }
  .cardees{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-   gap:40px;
- padding: 0px;
+display:flex;
+align-items: center;
+gap:19px;
+flex-wrap:wrap;
+justify-content: center;
  }
  .card{
     background-color: #24263b;
     padding:60px 40px;
-
+    
     color:White;
     border-radius: 25px;
     width:350px;
@@ -178,7 +185,11 @@ nav .navitem{
     width:250px;
     color:#e8e9f2;
  }
- @media (max-width:768px) {
+ @media (max-width:780px) {
+    header{
+        padding:0;
+        justify-content: center;
+    }
     header .menu{
         display:none;
     }
@@ -191,7 +202,7 @@ nav .navitem{
         flex-direction: column;
     }
     #Home .words h1{
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 700px;
         color:white;
         margin:50px 0;
@@ -207,13 +218,32 @@ nav .navitem{
       #Home .right {
         width:300px;
       }
-      #Home .right img{
-        width:100%;
-        margin-top: 60px;
+      #Home .right {
+      display: none;
       }
-
-      .cardees .card{
-        grid-column: span 3;
-      }
+      #Services{
+        background-color: #1f2235;
+      
+     }
+     #Services .title h2{
+        font-size: 38px;
+        color:white;
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-family: "Poppins", sans-serif;
+     }
+   
+     .cardees {
+      flex-direction: column;
+     }
+    .cardees  .card{
+       margin-top: 40px;
+     }
+     #icons{
+    align-items: center;
+        justify-content: center;
+       
+     }
  }
+
 
